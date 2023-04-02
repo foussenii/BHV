@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brasserie de l'Hôtel de Ville</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+  <link rel="icon" href="contenus/icons-logo/bhv.ico" sizes="any" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+
+  <style>
+    body {
+      background-color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 p {
+      font-family: 'Montserrat', sans-serif;
+    }
+    i{
+      color: white;
+    }
+    
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        iframe{
+          width: 650px;
+          height: 400px;
+        }
+      }
+
+      .menu-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    
+    .navbar {
+      background-color: #fff;
+    }
+    
+    .navbar-brand img {
+      height: 100px;
+      margin: 10px;
+    }
+    .info-bar{
+    color: white;
+    width: auto;
+  padding: 10px;
+  background-color: #FF4747;
+  border-radius: 25px;
+}
+.price{
+color: #FF4747;
+}
+.red{
+color: #FF4747;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+    
+    footer {
+      background-color: #FF4747;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    
+  </style>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand bhv" href="index.html">
+      <img src="contenus/icons-logo/logo.png" alt="BHV Logo">
+  
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-center" href="index.html">La carte</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link text-center" href="fundme.html">Nous trouver</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-center" href="Galerie.html">Galerie</a>
+        </li>
+        <li class="nav-item text-center red">
+          <a href="https://www.instagram.com/bhv_asnieres/" target="_blank"><i class="fab fa-instagram fa-2x red"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-center"  href="index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="Entrées.html">Entrées</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="Plats.html">Plats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="desserts.html">Desserts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</header>
+
+
+
+<section class="text-center container">
+  <div class="col-lg-6 col-md-8 mx-auto">
+    <h1 class="fw-light">Nous trouver</h1>
+  </div>
+</section>
+
+<section class="py-5 container">
+  <div class="col-lg-6 col-md-8 mx-auto">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="contenus/fundme/img1.jpg" class="d-block w-100" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img src="contenus/fundme/img2.jpg" class="d-block w-100" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img src="contenus/fundme/img3.jpg" class="d-block w-100" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img src="contenus/fundme/img4.jpg" class="d-block w-100" alt="Fourth slide">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="py-5 container">
+  <div class="col-lg-6 col-md-8 mx-auto">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.2659282502123!2d2.2873913155804644!3d48.91032550500268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f6455a7f365%3A0x53a16b9360edf90f!2s10%20Pl.%20de%20l&#39;H%C3%B4tel%20de%20ville%2C%2092600%20Asni%C3%A8res-sur-Seine!5e0!3m2!1sfr!2sfr!4v1680450092603!5m2!1sfr!2sfr" width="336" height="424" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+  
+
+<section class="text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Adresse</h1>
+      <p class="lead text-body-secondary">10 Pl. de l'Hôtel de ville, 92600 Asnières-sur-Seine</p>
+    </div>
+  </div>
+</section>
+
+<section class="text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Horaires</h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>Lundi & Dimanche : 08h00-15h00</li>
+        <li>Mardi, Mercredi, Jeudi et Samedi : 08h00-00h00</li>
+      </ul>
+    </div>
+    </div>
+</section>
+
+<section class="text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Transports en commun</h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>Transilien : ligne L (station : Asnières)</li>
+        <li>Bus : 175 (station :Mairie)</li>
+        <li>Parking en face de la mairie</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="py-3">
+  <div class="container text-center">
+    <p>Brasserie de l’Hôtel de Ville</p>
+    <p>10 Pl. de l'Hôtel de ville, 92600 Asnières-sur-Seine</p>
+    <p>Tél : 01 47 93 14 27</p>
+      <a href="https://www.instagram.com/bhv_asnieres/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  });
+</script>
+</body>
