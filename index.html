@@ -179,19 +179,36 @@ color: #FF4747;
 </header>
 
 <!-- Section -->
-
-  <div class="container text-center info-bar">
-    <p>Du Lundi au Vendredi : entrée + plat ou Plat + dessert 22€</p>
-  </div>
+  <section class="text-center container">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h6 class="fw-light">Du Lundi au Vendredi : entrée + plat ou Plat + dessert à 22€</h6>
+    </div>
+  </section>
 
 <!-- Section Plats -->
 
-  
+
+
 <section id="plats">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="contenus/entrées/saumons.jpg" alt="Plats" class="img-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="contenus/entrées/saumons.jpg" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/entrées/egg.jpg" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/entrées/foie.jpg" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/entrées/soupe.jpg" class="d-block w-100" alt="Fourth slide">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
         <h4 class="text-center marge">Entrées</h4>
@@ -222,7 +239,22 @@ color: #FF4747;
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="contenus/plats/burger.jpg" alt="Plats" class="img-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="contenus/plats/burger.jpg" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/plats/salade.jpg" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/plats/pizza.jpg" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/plats/plats.jpg" class="d-block w-100" alt="Fourth slide">
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
         <h4 class="text-center marge">Plats</h4>
@@ -253,7 +285,7 @@ color: #FF4747;
   </div>
 </section>
 
-<section class="py-5 container">
+<section class="container py-3">
   <div class="col-lg-6 col-md-8 mx-auto">
     <div>
       <h4 class="text-center marge">À la carte</h4>
@@ -276,13 +308,29 @@ color: #FF4747;
   </div>
 </section>
 
+
 <section id="plats">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <img src="contenus/desserts/salade-fruit.jpg" alt="dessert" class="img-fluid">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="contenus/desserts/micuit.png" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/desserts/pana.png" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/desserts/profit.png" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img src="contenus/desserts/creme-bruler.png" class="d-block w-100" alt="Fourth slide">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 py-5">
+      <div class="col-md-6 py-4">
         <h4 class="text-center">Desserts</h4>
         <p class="text-center">Compris dans le menus</p>
         <ul class="list-group">
@@ -320,11 +368,10 @@ color: #FF4747;
   </div>
 </section>
 
-
-<section class="py-5 container">
+<section class="py-1 container">
   <div class="col-lg-6 col-md-8 mx-auto">
     <div>
-      <p class="text-center marge">Hors menus</p>
+      <p class="text-center">Hors menus</p>
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Café gourmand
@@ -343,7 +390,7 @@ color: #FF4747;
   </div>
 </section>
 
-
+<br>
 <!-- Footer -->
 <footer class="py-3">
   <div class="container text-center">
@@ -355,5 +402,12 @@ color: #FF4747;
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    })
+  });
+</script>
 
 </body>
